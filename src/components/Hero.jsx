@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle, MapPin, Layers, Award, Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Zap } from 'lucide-react';
+import WatermarkLogo from './WatermarkLogo';
 
 export default function Hero() {
   const highlights = [
@@ -10,6 +11,9 @@ export default function Hero() {
 
   return (
     <section id="inicio" className="relative pt-28 sm:pt-36 pb-20 md:pb-28 overflow-hidden bg-gradient-to-b from-sky-50/60 via-white to-slate-50">
+      {/* Massive seamless watermark logo spanning across the white background */}
+      <WatermarkLogo className="top-8 sm:top-12 md:top-16" />
+
       {/* Background ambient glowing spheres */}
       <div className="absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 pointer-events-none overflow-hidden opacity-60">
         <div className="absolute -top-10 left-10 w-80 h-80 rounded-full bg-cyan-300/30 blur-3xl"></div>

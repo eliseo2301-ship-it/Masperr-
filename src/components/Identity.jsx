@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Target, Compass, HeartHandshake, CheckCircle2, Cpu, Sparkles, Quote, Award, ShieldCheck, Calendar, Flame } from 'lucide-react';
+import WatermarkLogo from './WatermarkLogo';
 
 export default function Identity() {
   const [activeTab, setActiveTab] = useState('mision');
@@ -60,7 +61,10 @@ export default function Identity() {
 
   return (
     <section id="nosotros" className="py-20 md:py-28 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background large seamless watermark logo */}
+      <WatermarkLogo className="top-12 opacity-80" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
