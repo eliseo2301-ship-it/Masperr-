@@ -21,6 +21,8 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon',
   '.webp': 'image/webp',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
@@ -55,7 +57,36 @@ const server = http.createServer((req, res) => {
         res.setHeader('Cache-Control', 'no-cache');
       }
 
-      res.writeHead(200, { 'Content-Type': contentType });
+      // HTTP Range Request Support (Essential for iOS Safari & Mobile Video Streaming)
+      if (req.headers.range && (ext === '.mp4' || ext === '.webm')) {
+        const range = req.headers.range;
+        const totalSize = stats.size;
+        const parts = range.replace(/bytes=/, '').split('-');
+        const start = parseInt(parts[0], 10);
+        const end = parts[1] ? parseInt(parts[1], 10) : totalSize - 1;
+
+        if (start >= totalSize || end >= totalSize) {
+          res.writeHead(416, { 'Content-Range': `bytes */${totalSize}` });
+          return res.end();
+        }
+
+        const chunksize = end - start + 1;
+        res.writeHead(206, {
+          'Content-Range': `bytes ${start}-${end}/${totalSize}`,
+          'Accept-Ranges': 'bytes',
+          'Content-Length': chunksize,
+          'Content-Type': contentType,
+        });
+
+        fs.createReadStream(filePath, { start, end }).pipe(res);
+        return;
+      }
+
+      res.setHeader('Accept-Ranges', 'bytes');
+      res.writeHead(200, { 
+        'Content-Type': contentType,
+        'Content-Length': stats.size 
+      });
       fs.createReadStream(filePath).pipe(res);
     } else {
       // Fallback to index.html for Single Page Application client-side routing
