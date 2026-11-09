@@ -24,10 +24,12 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white shadow-sm border border-slate-200/80 text-xs sm:text-sm font-bold text-slate-800">
             <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="bg-gradient-to-r from-brand-cyan to-brand-magenta bg-clip-text text-transparent font-extrabold uppercase tracking-wide">
-              Líderes en México
+              Fundada en 2008
             </span>
             <span className="text-slate-300">•</span>
-            <span className="text-slate-600">Gran Formato, Offset & Impresión Industrial</span>
+            <span className="text-slate-700 font-bold">+18 Años</span>
+            <span className="text-slate-300">•</span>
+            <span className="text-slate-600">Líderes en Gran Formato, Offset & Impresión Industrial</span>
           </div>
         </div>
 
@@ -106,8 +108,8 @@ export default function Hero() {
         {/* Quick Numbers Bar */}
         <div className="mt-14 pt-8 border-t border-slate-200/80 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <div className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">+15 Años</div>
-            <div className="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Liderando el mercado</div>
+            <div className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Desde 2008</div>
+            <div className="text-xs sm:text-sm font-semibold text-slate-500 mt-1">+18 Años de excelencia</div>
           </div>
           <div>
             <div className="text-3xl sm:text-4xl font-black text-brand-cyan tracking-tight">+50,000</div>

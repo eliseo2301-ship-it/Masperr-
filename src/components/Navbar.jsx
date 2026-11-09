@@ -48,7 +48,7 @@ export default function Navbar() {
               </span>
             </div>
             <div className="hidden lg:flex flex-col">
-              <span className="text-xs uppercase font-bold tracking-widest text-slate-400">Taller Industrial</span>
+              <span className="text-[11px] uppercase font-bold tracking-widest text-brand-cyan">Fundada en 2008 • Taller Industrial</span>
               <span className="text-sm font-extrabold text-slate-800 tracking-tight flex items-center gap-1.5">
                 Publicidad & Impresión
                 <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>

@@ -7,11 +7,12 @@ export default function VirtualBot() {
     {
       id: 1,
       sender: 'bot',
-      text: '¡Hola! Soy Maspi, el asistente virtual de Masperr Publicidad & Impresión. ¿En qué proyecto gráfico te puedo orientar hoy?',
+      text: '¡Hola! Soy Maspi, el asistente virtual de Masperr Publicidad & Impresión (Fundada en 2008). ¿En qué proyecto gráfico te puedo orientar hoy?',
       options: [
         'Diferencia entre Offset y Digital',
         'Materiales de Plotter y Gran Formato',
         'Displays para Eventos y Expos',
+        'Historia y Filosofía del Fundador',
         '¿Dónde está ubicado el taller?'
       ]
     }
@@ -41,6 +42,10 @@ export default function VirtualBot() {
     'Displays para Eventos y Expos': {
       text: 'Para stands y activaciones de marca contamos con sistemas portátiles de aluminio de fácil armado:\n\n• **Muros Expandibles (Backdrops):** En tela sublimada sin arrugas o paneles magnéticos con maletín transportador.\n• **Roll Ups de Aluminio:** Medidas de 80x200 cm, 85x200 cm y 100x200 cm con lona o tela de alta definición.\n• **Módulos Demoset:** Mesas portátiles de atención al cliente y degustación.\n• **X-Banners y Arañas:** Económicos y súper livianos.',
       followUps: ['Cotizar Displays por WhatsApp', 'Ver otra pregunta']
+    },
+    'Historia y Filosofía del Fundador': {
+      text: '🏢 **Masperr Publicidad fue fundada en 2008** en la Ciudad de México.\n\n✨ **Filosofía del Fundador:**\n«Más que tinta sobre un sustrato, forjamos el prestigio de cada marca. Un cliente no nos da un archivo, nos confía su reputación; por eso jamás decimos "no se puede" y competimos por ser los más precisos, puntuales y confiables de México.»\n\nCon más de 18 años de trayectoria ininterrumpida, combinamos maquinaria alemana Heidelberg y plotters industriales con un cuidado artesanal único.',
+      followUps: ['Hablar con un asesor en WhatsApp', '¿Dónde está ubicado el taller?', 'Ver otra pregunta']
     },
     '¿Dónde está ubicado el taller?': {
       text: 'Nos encontramos en la Ciudad de México:\n\n📍 **Coordenadas:** 19.3873977, -99.1450275\n📌 **Zona:** Benito Juárez, CDMX.\n⏰ **Horario:** Lunes a Viernes de 9:00 a 19:00 hrs y Sábados de 9:00 a 14:00 hrs.\n\nPuedes visitarnos para revisar muestras de papel, pruebas de color o recolectar tus pedidos.',
@@ -81,6 +86,7 @@ export default function VirtualBot() {
               'Diferencia entre Offset y Digital',
               'Materiales de Plotter y Gran Formato',
               'Displays para Eventos y Expos',
+              'Historia y Filosofía del Fundador',
               '¿Dónde está ubicado el taller?'
             ]
           }
@@ -124,6 +130,7 @@ export default function VirtualBot() {
           'Diferencia entre Offset y Digital',
           'Materiales de Plotter y Gran Formato',
           'Displays para Eventos y Expos',
+          'Historia y Filosofía del Fundador',
           '¿Dónde está ubicado el taller?'
         ]
       }

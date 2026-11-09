@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Líderes en México en publicidad, gran formato, offset e impresión digital e industrial. Hacemos realidad cualquier proyecto que tu marca requiera con la más alta calidad y precisión de México.
+              Fundada en 2008. Líderes en México en publicidad, gran formato, offset e impresión digital e industrial con más de 18 años de excelencia. Hacemos realidad cualquier proyecto que tu marca requiera con la más alta calidad y precisión de México.
             </p>
 
             <div className="flex items-center gap-2 pt-2">
@@ -115,7 +115,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Masperr Publicidad & Impresión. Todos los derechos reservados. Hecho con precisión en México.</p>
+          <p>© {new Date().getFullYear()} Masperr Publicidad & Impresión • Fundada en 2008. Todos los derechos reservados. Hecho con precisión en México.</p>
 
           <button
             onClick={scrollToTop}
