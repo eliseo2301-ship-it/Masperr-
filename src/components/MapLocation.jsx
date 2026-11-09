@@ -6,7 +6,7 @@ export default function MapLocation() {
   const mapEmbedUrl = "https://maps.google.com/maps?q=19.3873977,-99.1450275&t=&z=16&ie=UTF8&iwloc=&output=embed";
 
   return (
-    <section id="ubicacion" className="py-20 md:py-28 bg-slate-50 relative">
+    <section id="ubicacion" className="py-20 md:py-28 bg-slate-50/60 backdrop-blur-[2px] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

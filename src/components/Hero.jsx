@@ -10,17 +10,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="inicio" className="relative pt-28 sm:pt-36 pb-20 md:pb-28 overflow-hidden bg-gradient-to-b from-sky-50/60 via-white to-slate-50">
-      {/* Massive seamless watermark logo spanning across the white background */}
-      <WatermarkLogo className="top-8 sm:top-12 md:top-16" />
-
-      {/* Background ambient glowing spheres */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 pointer-events-none overflow-hidden opacity-60">
-        <div className="absolute -top-10 left-10 w-80 h-80 rounded-full bg-cyan-300/30 blur-3xl"></div>
-        <div className="absolute top-20 right-10 w-96 h-96 rounded-full bg-pink-300/25 blur-3xl"></div>
-        <div className="absolute -bottom-10 left-1/3 w-72 h-72 rounded-full bg-amber-200/35 blur-3xl"></div>
-      </div>
-
+    <section id="inicio" className="relative pt-28 sm:pt-36 pb-20 md:pb-28 overflow-hidden bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Tag badge */}

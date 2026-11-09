@@ -77,7 +77,7 @@ export default function ExpressQuote() {
   };
 
   return (
-    <section id="cotizador" className="py-20 md:py-28 bg-gradient-to-b from-white to-sky-50/50 relative">
+    <section id="cotizador" className="py-20 md:py-28 bg-white/50 backdrop-blur-[2px] relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

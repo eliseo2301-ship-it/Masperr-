@@ -93,7 +93,7 @@ export default function Services() {
     : services.filter(s => s.category === selectedCategory);
 
   return (
-    <section id="servicios" className="py-20 md:py-28 bg-slate-50 relative">
+    <section id="servicios" className="py-20 md:py-28 bg-slate-50/50 backdrop-blur-[2px] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

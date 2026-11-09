@@ -60,10 +60,7 @@ export default function Identity() {
   const CurrentIcon = current.icon;
 
   return (
-    <section id="nosotros" className="py-20 md:py-28 bg-white relative overflow-hidden">
-      {/* Background large seamless watermark logo */}
-      <WatermarkLogo className="top-12 opacity-80" />
-
+    <section id="nosotros" className="py-20 md:py-28 bg-white/60 backdrop-blur-[2px] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
