@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Heart, ArrowUp } from 'lucide-react';
+import InteractiveLogo from './InteractiveLogo';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -18,21 +19,9 @@ export default function Footer() {
           
           {/* Brand Col (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="p-1.5 bg-white rounded-xl shadow-md">
-                <img
-                  src="/assets/logo-principal.jpeg"
-                  alt="Masperr Publicidad"
-                  className="h-12 w-auto object-contain rounded-lg"
-                />
-              </div>
-              <div>
-                <span className="font-black text-xl text-white tracking-tight">MASPERR</span>
-                <span className="block text-xs uppercase font-bold text-brand-cyan tracking-widest">
-                  Publicidad & Impresión
-                </span>
-              </div>
-            </div>
+            <a href="#inicio" className="inline-block group">
+              <InteractiveLogo size="md" showText={true} theme="dark" />
+            </a>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Fundada en 2008. Líderes en México en publicidad, gran formato, offset e impresión digital e industrial con más de 18 años de excelencia. Hacemos realidad cualquier proyecto que tu marca requiera con la más alta calidad y precisión de México.

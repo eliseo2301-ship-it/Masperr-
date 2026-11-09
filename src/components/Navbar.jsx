@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, MessageCircle, MapPin, Menu, X, ChevronRight, Sparkles } from 'lucide-react';
+import InteractiveLogo from './InteractiveLogo';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,30 +31,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo Brand */}
-          <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="relative p-1 bg-white rounded-xl shadow-sm border border-slate-200/80 group-hover:border-brand-cyan transition-all">
-              <img 
-                src="/assets/logo-principal.jpeg" 
-                alt="Masperr Publicidad & Impresión" 
-                className="h-11 sm:h-13 w-auto object-contain rounded-lg transition-transform group-hover:scale-105"
-                onError={(e) => {
-                  // Fallback in case of image load delay
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'block';
-                }}
-              />
-              <span className="hidden font-black text-xl tracking-tight text-slate-900 px-2 py-1">
-                MASPERR <span className="text-brand-cyan">PUBLICIDAD</span>
-              </span>
-            </div>
-            <div className="hidden lg:flex flex-col">
-              <span className="text-[11px] uppercase font-bold tracking-widest text-brand-cyan">Fundada en 2008 • Taller Industrial</span>
-              <span className="text-sm font-extrabold text-slate-800 tracking-tight flex items-center gap-1.5">
-                Publicidad & Impresión
-                <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              </span>
-            </div>
+          {/* Logo Brand: Interactive, Larger, with Business Name */}
+          <a href="#inicio" className="group py-1">
+            <InteractiveLogo size="md" showText={true} theme="light" />
           </a>
 
           {/* Desktop Navigation */}
