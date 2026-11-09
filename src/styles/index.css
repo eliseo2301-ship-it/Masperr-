@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom vibrant gradients & effects */
+.cmyk-gradient-text {
+  background: linear-gradient(135deg, #00A8E8 0%, #0284C7 30%, #E6007E 70%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cmyk-border-gradient {
+  border-image: linear-gradient(to right, #00A8E8, #E6007E, #FFDD00) 1;
+}
+
+.cmyk-bar {
+  background: linear-gradient(90deg, #00A8E8 0%, #00A8E8 25%, #E6007E 25%, #E6007E 50%, #FFDD00 50%, #FFDD00 75%, #00171F 75%, #00171F 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
