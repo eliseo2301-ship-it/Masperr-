@@ -28,11 +28,11 @@ export default function Navbar() {
       {/* CMYK Top accent strip */}
       <div className="absolute top-0 left-0 right-0 h-1 cmyk-bar"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2">
           
-          {/* Logo Brand: Interactive, Larger, with Business Name */}
-          <a href="#inicio" className="group py-1">
+          {/* Logo Brand: Interactive, Responsive, with Business Name */}
+          <a href="#inicio" className="group py-1 shrink min-w-0">
             <InteractiveLogo size="md" showText={true} theme="light" />
           </a>
 
@@ -99,6 +99,11 @@ export default function Navbar() {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden glass-card border-t border-slate-200 px-4 pt-3 pb-6 mt-2 space-y-3 shadow-xl">
+          {/* Logo Showcase inside Mobile Menu */}
+          <div className="pb-3 border-b border-slate-200/80 flex items-center justify-between">
+            <InteractiveLogo size="sm" showText={true} theme="light" />
+          </div>
+
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
               <a
